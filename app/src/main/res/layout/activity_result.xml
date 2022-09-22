@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANDA TERDAFTAR"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TableLayout
+        android:id="@+id/tl_Formulir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_judul"
+        android:layout_marginTop="40dp">
+        <TableRow>
+            <TextView
+                android:text="NPM"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:text=":"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                />
+            <TextView
+                android:id="@+id/tv_npm"
+                android:text="Isi NPM"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Nama Mahasiswa"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:text=":"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                />
+            <TextView
+                android:id="@+id/tv_nama"
+                android:text="Isi Nama Mahasiswa"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:text=":"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                />
+            <TextView
+                android:id="@+id/tv_jk"
+                android:text="Isi Jenis Kelamin"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Program Studi"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:text=":"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                />
+            <TextView
+                android:id="@+id/tv_prodi"
+                android:text="Isi Program Studi"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
